@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экономический аудит: N Клиент</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden my-8">
+        <!-- Шапка -->
+        <div class="bg-slate-900 text-white p-8">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tight">RETAIL AI AUDIT</h1>
+                    <p class="text-slate-400 mt-2 text-sm">Находим скрытые резервы прибыли в вашем ассортименте</p>
+                    <p class="text-slate-400 mt-2 text-sm">Глубокая аналитика на базе искусственного интеллекта</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-slate-400">Отчёт подготовлен для:</p>
+                    <p class="text-xl font-semibold">N Клиент</p>
+                    <p class="text-xs text-slate-500 mt-1">Дата: 15.10.2026</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ключевые метрики -->
+        <div class="p-8 border-b border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                <span class="w-2 h-6 bg-blue-600 mr-3 rounded-sm"></span>
+                1. Ключевые показатели (за 30 дней)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+                    <p class="text-sm text-blue-600 font-medium uppercase tracking-wide">Выручка</p>
+                    <p class="text-3xl font-bold text-blue-900 mt-1">73 024 237 ₽</p>
+                    <p class="text-xs text-blue-500 mt-2">По 200 SKU</p>
+                </div>
+                <div class="bg-red-50 p-5 rounded-lg border border-red-100">
+                    <p class="text-sm text-red-600 font-medium uppercase tracking-wide">Замороженный капитал</p>
+                    <p class="text-3xl font-bold text-red-900 mt-1">12 386 395 ₽</p>
+                    <p class="text-xs text-red-500 mt-2">В неликвидах (5 SKU)</p>
+                </div>
+                <div class="bg-amber-50 p-5 rounded-lg border border-amber-100">
+                    <p class="text-sm text-amber-600 font-medium uppercase tracking-wide">Упущенная выручка</p>
+                    <p class="text-3xl font-bold text-amber-900 mt-1">2 344 038 ₽</p>
+                    <p class="text-xs text-amber-500 mt-2">Из-за out-of-stock</p>
+                </div
+            </div>
+        </div>
+
+        <!-- ABC/XYZ Матрица -->
+        <div class="p-8 border-b border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                <span class="w-2 h-6 bg-indigo-600 mr-3 rounded-sm"></span>
+                2. ABC/XYZ Матрица ассортимента
+            </h2>
+            <p class="text-sm text-gray-600 mb-4">Распределение товаров по вкладу в выручку (A, B, C) и стабильности спроса (X, Y, Z).</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                        <tr>
+                            <th class="px-4 py-3 rounded-tl-lg">Группа</th>
+                            <th class="px-4 py-3 text-center">X (Стабильный)</th>
+                            <th class="px-4 py-3 text-center">Y (Колеблющийся)</th>
+                            <th class="px-4 py-3 text-center rounded-tr-lg">Z (Случайный / Нет спроса)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr class="bg-blue-50">
+            <td class="px-4 py-3 border-b border-gray-200 text-blue-900 font-semibold">Группа A</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">0</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">19</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">44</td>
+        </tr>
+        <tr class="bg-gray-50">
+            <td class="px-4 py-3 border-b border-gray-200 text-gray-900 font-semibold">Группа B</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">0</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">3</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">43</td>
+        </tr>
+        <tr class="bg-red-50">
+            <td class="px-4 py-3 border-b border-gray-200 text-red-900 font-semibold">Группа C</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">0</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">0</td>
+            <td class="px-4 py-3 border-b border-gray-200 text-center">91</td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Детализация рисков -->
+        <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Неликвиды -->
+            <div>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="w-2 h-6 bg-red-500 mr-3 rounded-sm"></span>
+                    3. Топ неликвидов
+                </h2>
+                <p class="text-xs text-gray-500 mb-3">Товары без продаж за 30 дней, занимающие склад.</p>
+                <table class="w-full text-sm">
+                    <tbody>
+                        
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">1</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Сандалии летние модель 777</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">192 шт.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-red-600">884 544 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">2</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Туфли детские модель 177</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">169 шт.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-red-600">794 807 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">3</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Ботинки женские модель 966</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">151 шт.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-red-600">743 826 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">4</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Сандалии летние модель 950</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">159 шт.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-red-600">625 665 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">5</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Сандалии летние модель 263</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">118 шт.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-red-600">507 872 ₽</td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Упущенная выручка -->
+            <div>
+                <h2 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <span class="w-2 h-6 bg-amber-500 mr-3 rounded-sm"></span>
+                    4. Упущенная выручка
+                </h2>
+                <p class="text-xs text-gray-500 mb-3">Товары, отсутствующие на складе при наличии спроса.</p>
+                <table class="w-full text-sm">
+                    <tbody>
+                        
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">1</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Сандалии летние модель 765</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">3 дн.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-amber-600">173 054 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">2</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Сандалии летние модель 193</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">3 дн.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-amber-600">146 952 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">3</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Сандалии летние модель 438</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">3 дн.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-amber-600">140 088 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">4</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Туфли детские модель 224</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">3 дн.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-amber-600">121 180 ₽</td>
+        </tr>
+        <tr>
+            <td class="px-4 py-3 border-b border-gray-100 text-gray-500">5</td>
+            <td class="px-4 py-3 border-b border-gray-100 font-medium text-gray-900">Туфли детские модель 643</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-center">2 дн.</td>
+            <td class="px-4 py-3 border-b border-gray-100 text-right font-semibold text-amber-600">118 411 ₽</td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Футер / Призыв к действию -->
+        <div class="bg-slate-50 p-8 border-t border-gray-200">
+            <h3 class="text-lg font-semibold text-slate-900 mb-3">Рекомендации по оптимизации:</h3>
+            <ul class="list-disc list-inside text-sm text-slate-700 space-y-2 mb-6">
+                <li>Провести срочную распродажу или уценку топ-неликвидов для высвобождения <strong>12 386 395 ₽</strong> оборотных средств.</li>
+                <li>Скорректировать систему автозаказа для товаров группы AX и AY, чтобы исключить потери в <strong>2 344 038 ₽</strong>.</li>
+                <li>Запросить управленческую отчётность для верификации себестоимости и расчета реальной маржинальности по выявленным проблемным SKU.</li>
+            </ul>
+            <div class="text-xs text-slate-400 border-t border-slate-200 pt-4">
+                Отчёт сгенерирован автоматически Агентом Аудитора на основе открытых данных и предоставленных выгрузок. 
+                Для проведения глубокого аудита с доступом к внутренней отчётности 1С свяжитесь с нами.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
